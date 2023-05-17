@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn {
+  @apply px-3 py-3 rounded-xl text-stone-100;
+}
+
+.heading {
+  @apply text-2xl my-2 text-orange-200 capitalize;
+}
+
+.paragraph {
+  @apply text-slate-300;
+}
+
+.tags span {
+  @apply italic text-gray-400;
+}

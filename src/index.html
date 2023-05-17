@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="bg-gray-800">
+    <div class="container mx-auto text-center">
+      <h2 class="text-slate-300 text-4xl font-bold capitalize my-10">
+        Search For your meal 🔍
+      </h2>
+      <div
+        class="bg-white border-2 w-1/2 p-2 mx-auto flex justify-between gap-2 rounded-xl"
+      >
+        <input
+          type="text"
+          placeholder="Ex.. Chicken Curry"
+          class="p-4 w-full rounded-xl border-transparent"
+          id="input"
+        />
+        <button id="submit" class="btn bg-orange-400 p-4">Search</button>
+      </div>
+    </div>
+
+    <div
+      class="container mx-auto border border-gray-700 min-h-[600px] rounded-xl mt-5 p-3"
+    >
+      <h1 class="text-gray-400 text-center text-4xl mt-16" id="noMeal">
+        No Meal to Show!
+      </h1>
+      <div class="meal-wrapper grid grid-cols-4 gap-5">
+        <!-- <div class="meal-box border border-gray-700 rounded-xl">
+          <img
+            src="https://www.themealdb.com/images/media/meals/wxywrq1468235067.jpg"
+            alt=""
+            class="rounded h-[200px] w-full object-cover"
+          />
+          <div class="p-3">
+            <h2 class="heading">Apple Juice with Large Bowl</h2>
+            <p class="paragraph">
+              Heat oven to 190C/170C fan/gas 5. Tip the flour and sugar into a
+              large bowl. Add the butter, then rub into the flour using your
+              fingertips to make a light breadcrumb texture. Do not overwork it
+              or the crumble will become heavy.
+            </p>
+            <p class="tags my-3"><span>Area</span>, <span>Category</span></p>
+            <a href="#" target="_blank" class="btn bg-orange-400">Watch</a>
+            <button class="btn">View Recipe</button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div
+      class="fixed inset-0 flex items-center justify-center bg-[#000000ba] invisible"
+      id="details"
+    >
+      <!-- <div class="bg-white w-64 p-6 rounded shadow-lg w-[70%] h-[600px]">
+        <h2 class="text-xl font-bold mb-4">Popup Title</h2>
+        <p class="mb-4">Popup content goes here.</p>
+        <button
+          class="bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded"
+        >
+          Close
+        </button>
+      </div> -->
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
